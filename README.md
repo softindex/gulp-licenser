@@ -24,7 +24,7 @@ var LICENSE_TEMPLATE =
 
 gulp.task('updateLicense', function() {
   gulp.src('./src/*.js')
-    .pipe(license(LICENSE_TEMPLATE))
+    .pipe(licenser(LICENSE_TEMPLATE))
     .pipe(gulp.dest('./src/'))
 });
 ```
